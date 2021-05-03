@@ -1,0 +1,41 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+/*Background color*/
+$white-bg : #fff!important;
+$blue-bg: #4353a0;
+$transparent-bg: transparent!important;
+
+
+/*Font color*/
+$blue-font: #4353a0!important;
+$white-font: #fff;
+$font-hover: #f7c05b!important;
+
+/*Height- Width*/
+$width-100: 100%!important;
+$height-100: 100%;
+
+/*Padding*/
+$pd-top22: 22px;
+$pd-top30: 30px;
+$pd-btm30: 30px;
+$pd-rt50:50px;
+$pd-lt50:50px;
+$pd20: 20px 20px 20px 20px;
+$pd0: 0 0 0 0;
+
+/*Margin*/
+$mrg-top30: 30px;
+$mrg-btm30: 30px;
+
+/*Flex*/
+$flex-dp: flex;
+$flex-wrap: wrap;
+$flex25: 25%;
+
+/*Text*/
+$uppercaseText: uppercase;
+$line-ht35: 35px;
+$font14: 14px;

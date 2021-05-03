@@ -1,0 +1,82 @@
+.blogBox {
+  margin: 30px 0px 0px 0;
+  position: relative;
+  width: 100%;
+}
+
+.blog-section .flex-item{
+
+width: 50%;
+}
+
+.blog-section .flex-item  .blogBox image {
+display: block;
+width: 100%;
+height: auto;
+}
+
+.blogBox img {
+  height:230px;
+  width: 100%;
+}
+.blogContent {
+height: 100%;
+width: 100%;
+color: #636363;
+text-align: left;
+}
+.blogContent .text {
+  padding-left: 5%;
+  font-size: 20px;
+  margin: 5px 0;
+  color: #444;
+}
+.blogContent .desc-text {
+  padding-left: 5%;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+.blogContent p {
+  text-align: justify;
+  font-size: 14px;
+  line-height: 20px;
+  width: 80%;
+}
+.blog-section .flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.blog-section .flex-item {
+  background-color: #fff;
+  padding: 10px;
+  flex: 50%;
+}
+.blog-section .heading {
+color: #4353a0;
+  padding: 30px 0 0px 0px;
+  text-align: center;
+  font-size: 30px;
+  margin: 0 auto;
+  text-transform: capitalize;
+}
+.blog-section {
+background-color: #fff;
+margin-top: -25px ;
+padding: 30px 0;
+}
+
+
+@media (max-width: 768px) {
+  .blog-section .flex-container  {
+    flex-direction: column;
+  }
+  .blogBox { margin-bottom: 0; }
+  .blog-section .flex-item {
+    position: relative;
+    width: 95%;
+}
+}

@@ -1,0 +1,156 @@
+.testimonialDiv .carousel-root {
+    width: 64% !important;
+    margin: auto !important;
+    margin-top: 3% !important;
+  }
+  
+  .testimonialDiv .carousel .slide {
+    background: #fff !important;
+    color: black;
+    height: 100%;
+  }
+  .testimonialDiv { padding-bottom: 30px;}
+  
+  .testimonialDiv .carousel .slide img {
+    width: 139px !important;
+    border-radius: 50%;
+  }
+  
+  .testimonialDiv .myCarousel {
+    background: #fafafa;
+    margin-top: -6%;
+    width: 54%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 6%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: 1px solid #ddd;
+    height: 300px;
+    box-shadow: 0 0px 5px 0 rgb(0 0 0 / 10%), 0 0px 4px 0 rgb(0 0 0 / 10%);
+    margin-bottom: 2%;
+  }
+  
+  .testimonialDiv .carousel .control-dots {
+    padding-left: 5px !important;
+    outline: 0;
+    bottom: 5% !important;
+  }
+  
+  .testimonialDiv .myCarousel h3 {
+    color: #222;
+    font-weight: 100;
+    letter-spacing: 0.2px;
+    margin-bottom: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 17px;
+  }
+  
+  .testimonialDiv .myCarousel h4 {
+    text-transform: uppercase;
+    margin-top: 0;
+    padding-top: 0;
+    font-weight: 500;
+    color: #787878;
+    font-size: 14px;
+  }
+  
+  .testimonialDiv .myCarousel p {
+    font-weight: 100 !important;
+    line-height: 29px !important;
+    color: #222;
+    font-size: 15px;
+    max-height: 67px;
+  }
+  
+  .testimonialDiv .myCarousel p:before {
+    content: "“";
+    color: #aaa;
+    font-size: 26px;
+    font-family: monospace;
+    font-weight: 100;
+  }
+  
+  .testimonialDiv .myCarousel p:after {
+    content: "”";
+    color: #aaa;
+    font-size: 26px;
+    font-family: monospace;
+    font-weight: 100;
+    line-height: 0;
+  }
+  
+  .testimonialDiv .carousel .control-dots .dot {
+    box-shadow: none !important;
+    background: #454545 !important;
+    outline: 0;
+  }
+  
+  .testimonialDiv .carousel.carousel-slider .control-arrow {
+    height: 50px !important;
+    position: absolute;
+    top: 35% !important;
+  }
+  
+  .testimonialDiv .carousel .control-prev.control-arrow:before {
+    border-right: 8px solid #000;
+}
+
+.testimonialDiv .carousel .control-next.control-arrow:before { 
+    border-left: 8px solid #000;
+}
+
+.testimonialDiv .carousel .control-arrow, .testimonialDiv .carousel.carousel-slider .control-arrow { opacity: initial;}
+
+.testimonialDiv  .App {
+    text-align: center;
+  }
+
+  .testimonialDiv .testimonial-heading {
+    color: #4353a0;
+      padding: 20px 0 10px 0;
+      text-align: center;
+      font-size: 30px;
+      margin: 0 auto 30px;
+      text-transform: capitalize;
+  }
+  
+  @media only screen and (max-width: 934px) {
+    .testimonialDiv .carousel-root {
+      outline: 0;
+      width: 93% !important;
+      margin: auto !important;
+    }
+  
+    .testimonialDiv .carousel.carousel-slider .control-arrow {
+      display: none !important;
+    }
+    .testimonialDiv .myCarousel {
+      background: #fafafa;
+      margin-top: -9%;
+      width: 88%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 8%;
+      padding-bottom: 12.5%;
+      padding-left: 5%;
+      padding-right: 5%;
+      border: 1px solid #ddd;
+      height: 269px;
+    }
+  
+    .testimonialDiv .carousel .slide img {
+      width: 24% !important;
+      border-radius: 50%;
+    }
+    .testimonialDiv .testimonial-heading {
+      color: #4353a0;
+      padding: 20px 0 10px 0;
+      text-align: center;
+      font-size: 30px;
+      margin: 0 30% 30px;
+      text-transform: uppercase;
+  }
+  }

@@ -1,0 +1,42 @@
+@import 'MainStyle';
+
+.abt.row {
+    display: $flex-dp;
+    flex-wrap: $flex-wrap;
+    background-color: $white-bg;
+  }
+  
+  /* Create four equal columns */
+  .column {
+    flex: $flex25;
+    padding: $pd20;
+  }
+.aboutContent {
+    background-color: $blue-bg;
+    color: $white-font;
+    padding-top: $pd-top30;
+    padding-bottom: $pd-top30;
+    padding-left: $pd-lt50;
+    padding-right: $pd-rt50;
+    margin-top: $mrg-top30;
+    margin-bottom: $mrg-btm30;
+}  
+.aboutContent h2 { text-transform: capitalize;}
+.aboutContent p { line-height: $line-ht35; font-size: $font14; }
+.aboutBox { padding: $pd0 ;margin-top: $mrg-top30; margin-bottom: $mrg-btm30;  }
+.aboutBox img { width: $width-100; height: $height-100;  }
+.aboutContent button { background-color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 50px;
+  border-radius: 20px;
+  color: #4353a0;
+  font-weight: 700;}
+
+@media (max-width: 768px) {
+  .column.aboutBox {
+    flex: 50% 1;
+  }
+  .aboutBox { margin-bottom: 0; }
+  .aboutContent { margin-top: 0; }
+  .aboutBox img { display: none;}
+}
