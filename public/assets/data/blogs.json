@@ -1,0 +1,16 @@
+[{
+		"title": "Blog 1",
+		"img": "/assets/img/blog.jpg",
+		"description": "Lorem ipsum is a name for a common type of placeholder text. Also known as filler or dummy text, this is simply copy that serves to fill a space without actually saying anything meaningful."
+	},
+	{
+		"title": "Blog 2",
+		"img": "/assets/img/blog2.jpg",
+		"description": "Lorem ipsum is a name for a common type of placeholder text. Also known as filler or dummy text, this is simply copy that serves to fill a space without actually saying anything meaningful."
+	},
+	{
+		"title": "Blog 3",
+		"img": "/assets/img/blog.jpg",
+		"description": "Lorem ipsum is a name for a common type of placeholder text. Also known as filler or dummy text, this is simply copy that serves to fill a space without actually saying anything meaningful."
+	}
+]

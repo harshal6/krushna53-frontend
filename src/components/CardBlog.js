@@ -1,47 +1,46 @@
-import React from 'react';
-import './CardBlog.css';
+import React, { useState } from "react";
+import axios from "axios";
+import "./CardBlog.css";
 
 function CardBlog() {
-    return(
-        <div class="blog-section">
-        <h2 class="heading">Blog</h2> 
-
-        <div class="flex-container">        
-
-        <div class="flex-item" >   
-        <div class="blogBox">
-            <img src="/assets/img/blog.jpg" alt="" />
-            <div class="blogContent">
-            <h2 class="text">Blog1</h2>
-            <p class="desc-text">Lorem ipsum is a name for a common type of placeholder text. Also known as filler or dummy text, this is simply copy that serves to fill a space without actually saying anything meaningful.  </p>
+  const [data, setData] = useState([]);
+  React.useEffect(() => {
+    getData();
+  }, []);
+  const getData = () => {
+    axios({
+      method: "get",
+      url: "/assets/data/blogs.json",
+      headers : {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
+    })
+      .then((res) => {
+        setData(res.data);
+      })
+      .catch((e) => console.log(e));
+  };
+  return (
+    <div className="blog-section">
+      <h2 className="heading">Blog</h2>
+      <div className="flex-container">
+        {data.map((item, index) => (
+          <div className="flex-item">
+            <div className="blogBox">
+              <img src={item.img} alt="item" />
+              <div className="blogContent">
+                <h2 className="text">{item.title}</h2>
+                <p className="desc-text">
+                  {item.description}
+                  {"{"}" "{"}"}
+                </p>
+              </div>
             </div>
-        </div>
-        </div>
-
-        <div class="flex-item" >   
-        <div class="blogBox">
-        <img src="/assets/img/blog2.jpg" alt="" />
-            <div class="blogContent">
-            <h2 class="text">Blog2</h2>
-            <p class="desc-text">Lorem ipsum is a name for a common type of placeholder text. Also known as filler or dummy text, this is simply copy that serves to fill a space without actually saying anything meaningful.  </p>
-            </div>
-        </div>
-        </div>
-
-        <div class="flex-item" >   
-        <div class="blogBox">
-            <img src="/assets/img/blog.jpg" alt="" />
-            <div class="blogContent">
-            <h2 class="text">Blog3</h2>
-            <p class="desc-text">Lorem ipsum is a name for a common type of placeholder text. Also known as filler or dummy text, this is simply copy that serves to fill a space without actually saying anything meaningful.  </p>
-            </div>
-        </div>
-        </div>
-
-       
-        </div>
-        </div>
-    );
-
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
 export default CardBlog;

@@ -12,6 +12,7 @@ import FooterPg from './components/FooterPg';
 import ContactForm from './components/ContactForm';
 import Client from './components/Client';
 import Navbar from './components/Navbar';
+import CustomizedTables from "./components/CustomizedTables"
 import './components/Config.js';
 //import response from {express}
 import reportWebVitals from './reportWebVitals';
@@ -22,10 +23,10 @@ const rootElement = document.getElementById("root")
 
 ReactDOM.render(
   <React.StrictMode>
-  
+
 {/* <Header />  */}
   <Navbar />
-  
+
     <HomeBanner width='100%' height='550px' alt="Banner image"   />
     <div id="services">
     <ServiceCard />
@@ -35,9 +36,9 @@ ReactDOM.render(
     Lorem ipsum is a name for a common type of placeholder text. Also known as filler or dummy text, this is simply copy that serves to fill a space without actually saying anything meaningful.Lorem ipsum is a name for a common type of placeholder text. Also known as filler or dummy text, this is simply copy that serves to fill a space without actually saying anything meaningful.' />
     </div>
   <div id="blog" class="blog-container">
-  <CardBlog src={IMAGES.BLOG} width='100%' height='400px' alt="Banner image" heading='Blog title' description='Lorem ipsum is a name for a common type of placeholder text.'/> 
+  <CardBlog src={IMAGES.BLOG} width='100%' height='400px' alt="Banner image" heading='Blog title' description='Lorem ipsum is a name for a common type of placeholder text.'/>
   </div>
-  
+
   <div id="client" class="clientHeading">
 <h2>We deliver across the industries.</h2><br></br>
 </div>
@@ -53,7 +54,7 @@ ReactDOM.render(
   </div>
   <FooterPg />
   <CustomizedTables />
-  
+
   </React.StrictMode>,
   rootElement
 )
