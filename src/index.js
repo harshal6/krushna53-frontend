@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-//import Header from "./components/Header";
 import HomeBanner from "./components/HomeBanner";
 import IMAGES from "./components/Image";
 import AboutBox from './components/AboutBox';
@@ -14,7 +13,7 @@ import Client from './components/Client';
 import Navbar from './components/Navbar';
 import CustomizedTables from "./components/CustomizedTables"
 import './components/Config.js';
-//import response from {express}
+
 import reportWebVitals from './reportWebVitals';
 import './style.css';
 const rootElement = document.getElementById("root")
