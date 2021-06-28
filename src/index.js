@@ -50,9 +50,9 @@ ReactDOM.render(
 
     <div id="client" class="clientHeading">
       <h2>We deliver across the industries.</h2>
-      <br></br>
-    </div>
+      <br></br>    
     <Client />
+    </div>
 
     <div id="testimonial" class="testimonialDiv">
       <div class="heading-section">
@@ -64,7 +64,7 @@ ReactDOM.render(
       <ContactForm />
     </div>
     <FooterPg />
-    <CustomizedTables />
+  
   </React.StrictMode>,
   rootElement
 );

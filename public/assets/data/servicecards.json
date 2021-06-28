@@ -1,0 +1,16 @@
+[{
+		"title": "Service 1",
+		"img": "/assets/img/service1.jpg",
+		"description": "Lorem ipsum is a name for a common type of placeholder text. "
+	},
+	{
+		"title": "Service 2",
+		"img": "/assets/img/service1.jpg",
+		"description": "Lorem ipsum is a name for a common type of placeholder text."
+	},
+	{
+		"title": "Service 3",
+		"img": "/assets/img/service1.jpg",
+		"description": "Lorem ipsum is a name for a common type of placeholder text. "
+	}
+]

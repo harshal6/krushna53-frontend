@@ -1,46 +1,46 @@
-import React from 'react';
+import React, { useState } from "react";
+import axios from "axios";
 import './ServiceCard.css';
 
 function ServiceCard() {
+    const [data, setData] = useState([]);
+  React.useEffect(() => {
+    getData();
+  }, []);
+  const getData = () => {
+    axios({
+      method: "get",
+      url: "/assets/data/servicecards.json",
+      headers : {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
+    })
+      .then((res) => {
+        setData(res.data);
+      })
+      .catch((e) => console.log(e));
+  };
     return(
-        <div class="service-section">
-        <h2 class="heading">Services</h2> 
+        <div className="service-section">
+        <h2 className="heading">Services</h2> 
 
-        <div class="flex-container">        
-
-        <div class="flex-item" >   
-        <div class="serviceBox">
-            <img src="/assets/img/service1.jpg" alt="" />
-            <div class="serviceContent">
-            <h2 class="text">Service1</h2>
-            <p class="desc-text">Lorem ipsum is a name for a common type of placeholder text. </p>
+        <div className="flex-container">        
+        {data.map((item, index) => (
+        <div className="flex-item" >   
+        <div className="serviceBox">
+        <img src={item.img} alt="item" />
+            <div className="serviceContent">
+            <h2 className="text">{item.title}</h2>
+            <p className="desc-text"> 
+                {item.description}
+                {"{"}" "{"}"}
+            </p>
             </div>
-        <h3>Service1</h3>
+        <h3>{item.title}</h3>
         </div>
         </div>
-
-        <div class="flex-item" >   
-        <div class="serviceBox">
-        <img src="/assets/img/service2.jpg" alt="" />
-            <div class="serviceContent">
-            <h2 class="text">Service2</h2>
-            <p class="desc-text">Lorem ipsum is a name for a common type of placeholder text. </p>
-            </div>
-        <h3>Service1</h3>
-        </div>
-        </div>
-
-        <div class="flex-item" >   
-        <div class="serviceBox">
-        <img src="/assets/img/service1.jpg" alt="" />
-            <div class="serviceContent">
-            <h2 class="text">Service3</h2>
-            <p class="desc-text">Lorem ipsum is a name for a common type of placeholder text. </p>
-            </div>
-        <h3>Service1</h3>
-        </div>
-        </div>
-
+        ))}
 
         </div>
         </div>

@@ -26,6 +26,7 @@
     border: 1px solid #e8e8e8;
     padding: 10px 0;
     color: #333;
+    box-shadow: 0 0px 1px 0 rgb(0 0 0 / 16%), 0 4px 8px 0 rgb(0 0 0 / 19%);
 }
 .service-section .flex-item:hover .serviceContent .text {
   color: white;
@@ -71,6 +72,8 @@
   opacity: 0;
   transition: .5s ease;
   background-color: #4353a0f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .serviceContent p {

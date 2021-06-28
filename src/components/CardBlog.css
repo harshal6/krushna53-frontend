@@ -8,6 +8,13 @@
 
 width: 50%;
 }
+.blog-section hr {
+  width: 50%;
+    float: left;
+    margin: 0 20px;
+    border-color: #eee;
+}
+
 
 .blog-section .flex-item  .blogBox image {
 display: block;

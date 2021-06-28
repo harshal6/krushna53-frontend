@@ -32,6 +32,12 @@
   color: #4353a0;
   font-weight: 700;}
 
+  .aboutContent button:hover {
+    background-color: #4353a0;
+    color: #fff;
+    
+  }
+
 @media (max-width: 768px) {
   .column.aboutBox {
     flex: 50% 1;

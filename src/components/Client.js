@@ -1,23 +1,34 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import './Client.css';
 
-function Client(props) {
+function Client() {
+      const [data, setData] = useState([]);
+      React.useEffect(() => {
+        getData();
+      }, []);
+      const getData = () => {
+        axios({
+          method: "get",
+          url: "/assets/data/clients.json",
+          headers : {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+           }
+        })
+          .then((res) => {
+            setData(res.data);
+          })
+          .catch((e) => console.log(e));
+      };
     return(
 <div class="flex-container client-section">
-
+{data.map((item, index) => (
   <div class="item">
-        <img src="/assets/img/logo1.png" />
+        <img src={item.img} alt="item" />
   </div>
-  <div class="item">
-        <img src="/assets/img/logo2.png" /></div>
-  <div class="item">
-        <img src="/assets/img/logo3.png" /></div>  
-  <div class="item">
-        <img src="/assets/img/logo4.png" /></div>
-  <div class="item">
-        <img src="/assets/img/logo5.png" /></div>
-  <div class="item">
-        <img src="/assets/img/logo6.png" /></div>  
+  
+        ))}
 </div>
 
 );

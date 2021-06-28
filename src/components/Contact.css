@@ -1,10 +1,10 @@
 .contact-section {
     width: 50%;
     margin: 30px auto;
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow: 0 35px 60px 0 rgb(0 0 0 / 40%);
     padding: 50px;
-    background-color: #fff;
+    background-color: #f9f9f9;
 }
 .contact-section h4 {
     color: #4353a0;
@@ -29,7 +29,18 @@
     border-radius: 4px;
     padding-left: 10px;
 }
-
+.contact-section button {
+    background: #3047aa;
+    color: #fff;
+    padding: 10px 30px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 15px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    width: 50%;
+    margin: 3% 23%;
+}
 
 @media only screen and (max-width: 767px) {
     .contact-section {

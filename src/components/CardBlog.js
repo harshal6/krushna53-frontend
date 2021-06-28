@@ -37,7 +37,8 @@ function CardBlog() {
                 </p>
               </div>
             </div>
-          </div>
+            <hr></hr>
+          </div> 
         ))}
       </div>
     </div>
